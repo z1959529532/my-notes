@@ -7,6 +7,8 @@ const sidebarConfig = require('./config/sidebar-config.js');
 module.exports = {
     theme: 'reco',
     themeConfig: {
+        // type: 'blog',
+        
         /** 4、logo图片 */
         logo: '/assets/imgs/header.png',
     

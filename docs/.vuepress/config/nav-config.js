@@ -1,7 +1,7 @@
 /** 导航栏配置 */
 
 module.exports = [
-    {text: 'Home1', link: '/', icon: 'reco-tag'},
+    {text: 'Home', link: '/', icon: 'reco-tag'},
     {text: 'Vue', link: '/vue/'},
     {text: 'Article', link: '/article/'},
     {

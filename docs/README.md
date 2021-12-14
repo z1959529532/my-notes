@@ -1,5 +1,5 @@
 ---
-home: true
+# home: true
 # heroImage: /hero.png
 heroText: 我的笔记
 tagline: 笔记
