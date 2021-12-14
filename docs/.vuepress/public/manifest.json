@@ -1,6 +1,6 @@
 {
-  "name": "张雨生",
-  "short_name": "zys",
+  "name": "my-notes",
+  "short_name": "notes",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",

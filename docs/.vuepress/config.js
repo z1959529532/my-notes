@@ -25,7 +25,7 @@ module.exports = {
     /** 6、SEO配置  9、pwa例子配置 */
     title: '雨生灬wait',
     description: 'zys笔记',
-    port: '8787',
+    // port: '8787',
     head: headConfig,
     
     /** 插件 */

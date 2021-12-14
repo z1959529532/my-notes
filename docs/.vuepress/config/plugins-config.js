@@ -13,6 +13,13 @@ module.exports = {
     },
     
     /** 9、pwa插件(更新提示框) */
+    '@vuepress/pwa': {
+        serviceWorker: true,
+        updatePopup: {
+            message: '发现新内容可用',
+            buttonText: '刷新'
+        }
+    },
     
     /** 10、vssue插件(评论功能) */
     '@vssue/vuepress-plugin-vssue': {

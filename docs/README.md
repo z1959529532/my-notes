@@ -17,4 +17,6 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 
 <printer-page />
 
+pwa更新提示，注意本地安装vuepress（yarn add -D vuepress）
+
 <Vssue />
