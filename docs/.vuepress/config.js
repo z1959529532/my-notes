@@ -5,6 +5,7 @@ const sidebarConfig = require('./config/sidebar-config.js');
 
 // 配置文件
 module.exports = {
+    theme: 'reco',
     themeConfig: {
         /** 4、logo图片 */
         logo: '/assets/imgs/header.png',
