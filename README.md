@@ -1,2 +1,3 @@
-# my-notes
-vuepress我的笔记
+## my-notes
+
+我的笔记

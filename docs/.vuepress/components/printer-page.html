@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+            /* 等宽字体 */
+            font-family: monospace;
+            position: relative;
+        }
+        /* 光标 */
+        h1::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 6px;
+            height: 2ch;
+            background: #000;
+            border-radius: 2px;
+            right: -0.5ch;
+            
+            /*animation: 1.1s cursor steps(2, jump-none) infinite;*/
+        }
+        h1.ended::after {
+            animation: 1.1s cursor infinite;
+        }
+        @keyframes cursor {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        h1 span {
+            display: inline-block;
+            overflow: hidden;
+            width: 0;
+            
+            --delay: 10s;
+            animation: 0.1s text-in ease-in-out forwards;
+            /*animation: 0.1s text-out ease-in-out forwards;*/
+            animation-delay: var(--delay);
+        }
+        @keyframes text-in {
+            from {
+                width: 0;
+            }
+            to {
+                width: 2ch;
+            }
+        }
+        
+        @keyframes text-out {
+            from {
+                width: 2ch;
+            }
+            to {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+    let textArr = [
+        {title: '跟随光，成为光！', stop: 4},
+        {title: '没有梦想，和咸鱼有什么区别！', stop: 5}
+    ];
+    let curIndex = 0;
+    let h1 = null;
+    let spans = null;
+    
+    setTimeout(() => {
+        init();
+    }, 1000);
+    
+    function init() {
+        h1 = document.createElement('h1');
+        document.body.appendChild(h1);
+        
+        if (curIndex === textArr.length) {
+            curIndex = 0;
+            // return;
+        }
+        h1.innerHTML = textArr[curIndex].title;
+        h1.innerHTML = h1.textContent.replace(/\S/g, `<span>$&</span>`);
+        
+        let delay = 0;
+        spans = [...document.querySelectorAll('span')];
+        spans.forEach((span, index) => {
+            delay += 0.08;
+            // if (textArr[curIndex].stop === index) delay += 0.3;
+            span.style.setProperty('--delay', `${delay}s`);
+        });
+        // 监听到最后一个span给光标闪动
+        h1.addEventListener('animationend', goForward);
+    }
+    
+    function goForward(e) {
+        if (e.target === document.querySelector('h1 span:last-child')) {
+            h1.classList.add('ended');
+            
+            setTimeout(() => {
+                h1.removeEventListener('animationend', goForward);
+                h1.classList.remove('ended');
+
+                goBack();
+            }, 1600);
+        }
+    }
+    
+    function goBack() {
+        let goBackDelay = 0;
+        spans.reverse().forEach((span, i) => {
+            span.style.width = '2ch';
+            span.style.animation = '0.1s text-out ease-in-out forwards';
+            goBackDelay += 0.1;
+            span.style.animationDelay = `${goBackDelay}s`;
+        });
+        h1.addEventListener('animationend', textEnd);
+    }
+    
+    function textEnd(e) {
+        if (e.target === document.querySelector('h1 span:first-child')) {
+            spans.forEach(span => {
+                span.remove();
+            });
+            h1.removeEventListener('animationend', textEnd);
+            document.body.removeChild(h1);
+            curIndex++;
+            init();
+        }
+    }
+</script>
+
+</body>
+</html>
