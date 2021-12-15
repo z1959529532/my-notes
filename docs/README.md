@@ -1,8 +1,11 @@
 ---
-# home: true
+bgImageStyle: {
+    height: '50vh'
+}
+home: true
 # heroImage: /hero.png
 heroText: 我的笔记
-tagline: 笔记
+# tagline: 笔记
 actionText: 查看 →
 actionLink: /learn
 features:

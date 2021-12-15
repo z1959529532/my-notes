@@ -1,5 +1,5 @@
-/** 侧边栏配置 */
 
+/** 侧边栏配置 */
 module.exports = {
     /** 这样直接地址栏访问vue */
     '/vue/': [
@@ -7,19 +7,24 @@ module.exports = {
         'learn-vue2',
         'learn-vue3'
     ],
-    '/about/': [
-        '',
-        'about1',
-        'about2'
-    ],
-    '/article/': [
-        '',
-        'quan-xue'
-    ]
+    // '/vp-notes/': [
+    //     '',
+    // ],
+    // '/about/': [
+    //     '',
+    //     'about1',
+    //     'about2'
+    // ],
+    // '/article/': [
+    //     '',
+    //     'quan-xue'
+    // ]
 };
+
 
 // /** 开启默认 */
 // 'auto'
+
 
 // /** 数组形式 */
 // [
