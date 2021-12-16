@@ -1,5 +1,5 @@
 ---
-title: countUp 第三方组件库
+title: countUp
 ---
 
 ## countUp 第三方组件库展示

@@ -1,14 +1,13 @@
 ---
 title: vue2
 subSidebar: false
+date: 2020-10-14
 tags:
  - vue
 ---
 
 ## vue2-1
-### vue2-1-1
-哈哈哈哈哈哈
+aaa
 
 ## vue2-2
-### vue2-2-1
-啊啊啊啊啊啊
+bbb

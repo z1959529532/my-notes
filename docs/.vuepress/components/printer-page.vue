@@ -95,6 +95,7 @@
 <style scoped>
     #printer-page {
         height: 50vh;
+        width: 100%;
         background-color: rgba(0, 0, 0, .1);
         
         display: flex;

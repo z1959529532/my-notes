@@ -5,19 +5,14 @@ module.exports = [
     {text: 'Vuepress', link: '/vp-notes/', icon: 'reco-tag'},
     {text: 'Vue', link: '/vue/'},
     {text: 'Article', link: '/article/'},
-    {
-        text: '更多',
-        items: [
-            {text: 'About1', link: '/about/about1'},
-            {text: 'About2', link: '/about/about2'}
-            // {
-            //     text: '分组1',
-            //     items: [
-            //         { text: 'About1', link: '/about1' },
-            //     ]
-            // },
-        ]
-    },
+    { text: '时间线', link: '/timeline/', icon: 'reco-date' },
+    // {
+    //     text: '更多',
+    //     items: [
+    //         {text: 'About1', link: '/about/about1'},
+    //         {text: 'About2', link: '/about/about2'}
+    //     ]
+    // },
     {text: 'BaiDu', link: 'https://www.baidu.com/', target: '_blank'}
 ];
 

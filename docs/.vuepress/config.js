@@ -5,9 +5,13 @@ const sidebarConfig = require('./config/sidebar-config.js');
 
 // 配置文件
 module.exports = {
-    theme: 'reco',
+    theme: 'reco',  // 设置使用reco主题
+
     themeConfig: {
-        type: 'blog',
+        type: 'blog',  // blog主题（reco主题）
+        author: "zys",  // 右侧用户名（reco主题）
+        authorAvatar: '/assets/imgs/header.png',  // 右侧头像（reco主题）
+        startYear: '2020',
         
         /** 4、logo图片 */
         logo: '/assets/imgs/header.png',
@@ -24,11 +28,9 @@ module.exports = {
         lastUpdated: '更新时间'
     },
     
-    title: '雨生灬wait',
+    title: '灬wait',
     description: 'Welcome to vuePress my-notes',
     // port: '8787',
-    author: "@Z",
-    authorAvatar: '/assets/imgs/header.png',  // 设置头像
     /** 6、SEO配置  9、pwa例子配置 */
     head: headConfig,
     
@@ -39,8 +41,12 @@ module.exports = {
     /** 配置base */
     base: '/my-notes/',
     
-    /** 博客配置 */
+    /** 右侧分类和标签（reco主题） */
     blogConfig: {
+        category: {
+            location: 2, // 在导航栏菜单中所占的位置，默认2
+            text: "分类", // 默认文案 “分类”
+        },
         tag: {
             location: 3, // 在导航栏菜单中所占的位置，默认3
             text: "标签", // 默认文案 “标签”

@@ -1,5 +1,6 @@
 ---
 title: vuepress搭建
+date: 2021-12-02
 ---
 
 ## 9、使用pwa更新提示
