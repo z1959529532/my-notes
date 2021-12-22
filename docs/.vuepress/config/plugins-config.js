@@ -40,11 +40,18 @@ module.exports = {
     /** 17、图片缩放 */
     '@vuepress/medium-zoom': {
         selector: 'img.custom'
-    }
+    },
     
     /** 18、自动生成侧边栏 */
     // 'vuepress-plugin-auto-sidebar': {
     //     nav: true
     // }
+    
+    /** （reco主题） */
+    'cursor-effects': {
+        size: 5, // size of the particle, default: 2
+        shape: ['star' | 'circle'], // shape of the particle, default: 'star'
+        zIndex: 999999999, // z-index property of the canvas, default: 999999999
+    }
     
 };

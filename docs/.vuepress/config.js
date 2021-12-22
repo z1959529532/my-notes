@@ -11,7 +11,7 @@ module.exports = {
         type: 'blog',  // blog主题（reco主题）
         author: "zys",  // 右侧用户名（reco主题）
         authorAvatar: '/assets/imgs/header.png',  // 右侧头像（reco主题）
-        startYear: '2020',
+        startYear: '2019',
         
         /** 4、logo图片 */
         logo: '/assets/imgs/header.png',
@@ -21,7 +21,7 @@ module.exports = {
     
         /** 5、侧边栏 */
         sidebar: sidebarConfig,  // 自定义侧边栏
-        sidebarDepth: 2,         // 标题深度
+        sidebarDepth: 10,         // 标题深度
         subSidebar: 'auto',      // reco自动生成子侧边栏，原 sidebar 仍然兼容
     
         /** 7、更新时间 */
