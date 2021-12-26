@@ -104,6 +104,3 @@ Enter same passphrase again:    #再次输入密码
 ```
 3) 在github上新建仓库（new）-->成功-->复制HTTPS地址，本地clone即可
 ![](../.vuepress/public/text/git-clone.png)   
-
-## 在webstorm中集成git操作
-哈哈哈
