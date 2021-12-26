@@ -104,6 +104,19 @@ Enter same passphrase again:    #再次输入密码
 ```
 3) 在github上新建仓库（new）-->成功-->复制HTTPS地址，本地clone即可
 ![](../.vuepress/public/text/git-clone.png)   
+4) 在编辑器中使用快捷操作   
 
-## 在webstorm中集成git操作
-哈哈哈
+## git分支
+分支中常用的命令   
+
+``` sh
+git branch    #查看所有本地分支
+git branch -r    #查看所有远程分支
+git branch 分支名称    #新建分支，并停留在当前分支
+git branch -b 分支名称    #新建分支,并切换到该分支
+git merge 分支名称    #合并指定分支到当前分支
+git branch -d 分支名称    #删除分支
+#删除远程分支
+git push origin --delete 分支名称
+git branch -dr 分支名称
+```
