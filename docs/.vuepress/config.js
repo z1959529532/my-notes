@@ -21,7 +21,7 @@ module.exports = {
     
         /** 5、侧边栏 */
         sidebar: sidebarConfig,  // 自定义侧边栏
-        sidebarDepth: 10,         // 标题深度
+        sidebarDepth: 2,         // 标题深度
         subSidebar: 'auto',      // reco自动生成子侧边栏，原 sidebar 仍然兼容
     
         /** 7、更新时间 */
